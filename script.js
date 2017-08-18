@@ -1,6 +1,6 @@
 $('document').ready(function(){	
 	$('#page').hide();
-	$.getJSON("https://www.reddit.com/r/earthporn/top.json?sort=top&t=all&limit=100",function(json){
+	$.getJSON("https://www.reddit.com/r/AccidentalWesAnderson/top.json?sort=top&t=all&limit=100",function(json){
 		var rand=Math.floor(Math.random() * 100);
 		var url=json.data.children[rand].data.url;
 		betterUrl=tryConvertUrl(url);
