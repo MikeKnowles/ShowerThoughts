@@ -14,7 +14,7 @@ $('document').ready(function(){
    			$('#page').fadeIn("slow");
 		});	
 	});
-	$.getJSON("https://www.reddit.com/r/showerthoughts/top.json?sort=top&t=all&limit=100",function(json){
+	$.getJSON("https://www.reddit.com/r/SubredditSimulator/top.json?sort=top&t=month&limit=100",function(json){
 		var rand=Math.floor(Math.random() * 100);
 		var post=json.data.children[rand].data;
 		var quote=post.title;
